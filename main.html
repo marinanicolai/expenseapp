@@ -16,15 +16,25 @@
     <h3>Add a new item:</h3>
     <div class="input_container">
       <label for="task">Name:</label>
-      <input type="text" class="input" />
+      <input type="text" id="name" />
       <label for="date">Date:</label>
-      <input type="date" class="input" />
+      <input type="date" id="date" />
       <label for="amount">Amount:</label>
-      <input type="number" class="input" />
+      <input type="number" id="amount" />
       <button class="addButton">ADD EXPENSE</button>
     </div>
-    <div class="list_container"></div>
-
+    <div id="form-box">
+      <table>
+        <tr>
+          <th id="name">Name</th>
+          <th id="date">Date</th>
+          <th id="amount">Amount</th>
+        </tr>
+        <tr id="if-empty">
+          <td colspan="4"><span>Your added items will show up here!</span></td>
+        </tr>
+      </table>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
